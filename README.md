@@ -1,6 +1,6 @@
 # xiaoV2b
 本教程是基于@wyx2685 的v2board ，支持webman后的版本。 
--  [v2board]([https://github.com/InazumaV/V2bX](https://github.com/wyx2685/v2board))
+-   [v2board]([[https://github.com/InazumaV/V2bX](https://github.com/wyx2685/v2board)](https://github.com/wyx2685/v2board))
 
 ## 第一步首先安装aapanel /宝塔，这一步不会的不建议继续操作了，如果实在想研究的 可自行搜索 安装教程
 ![image](https://github.com/vlesstop/xiaoV2b/assets/48223192/1f00a9a1-79f5-4379-9758-6f9527f67e1f)
