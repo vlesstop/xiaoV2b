@@ -95,10 +95,10 @@ location ~ .*\.(js|css)?$
 ## 配置定时任务
 宝塔 面板 >计划任务
 
-任务类型--------Shell脚本
-任务名称--------V2B基本任务
-执行周期-------- N分钟1分钟
-脚本内容-------- php /www/wwwroot/v2board/artisan schedule:run
+```任务类型--------Shell脚本```
+```任务名称--------V2B基本任务```
+```执行周期-------- N分钟1分钟```
+```脚本内容-------- php /www/wwwroot/v2board/artisan schedule:run```
 根据上述信息添加每1分钟执行一次的定时任务。
 ![image](https://github.com/vlesstop/xiaoV2b/assets/48223192/79cc5cdf-7e47-428d-b660-f2944ef47893)
 
