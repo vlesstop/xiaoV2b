@@ -114,6 +114,9 @@ php artisan horizon
 ![image](https://github.com/vlesstop/xiaoV2b/assets/48223192/8eafa37c-d605-4f7a-aa66-1bb9bb792e22)
 
 
+## 注意
+启用webman后做的任何代码修改都需要重启生效
+
 ```
 php -c cli-php.ini webman.php start
 ```
