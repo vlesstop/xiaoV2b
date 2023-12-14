@@ -53,6 +53,43 @@ https://github.com/wyx2685/v2board/
 
 
 
-    git remote set-url origin https://github.com/wyx2685/v2board  
-    git checkout master  
-    ./update.sh  
+     git clone https://github.com/wyx2685/v2board.git ./
+## 克隆完成后执行以下命令
+      sh init.sh
+
+![image](https://github.com/vlesstop/xiaoV2b/assets/48223192/2e28d801-5db1-4074-ae31-a25180442278)
+
+![image](https://github.com/vlesstop/xiaoV2b/assets/48223192/1da7e5cc-136a-49e4-9e96-bc3937e22e09)
+
+
+## 配置站点目录及伪静态
+
+返回到宝塔页面， 选择网站， 点击 网站名，选择网站目录
+![image](https://github.com/vlesstop/xiaoV2b/assets/48223192/eed3dafa-d85e-42a5-b625-5f6d746fbbb3)
+
+
+## 然后选择伪静态，填写以下内容
+```
+location /downloads {
+}
+
+location / {
+            try_files $uri $uri/ @backend;
+        }
+
+        location ~ (/config/|/manage/|/webhook) {
+            try_files $uri $uri/ /index.php$is_args$query_string;
+        }
+
+        location @backend {
+            proxy_pass http://127.0.0.1:6600;
+        }
+
+location ~ .*\.(js|css)?$
+{
+    expires      1h;
+    error_log off;
+    access_log /dev/null; 
+}
+```
+
