@@ -74,19 +74,15 @@ https://github.com/wyx2685/v2board/
 ```
 location /downloads {
 }
-
 location / {
             try_files $uri $uri/ @backend;
         }
-
         location ~ (/config/|/manage/|/webhook) {
             try_files $uri $uri/ /index.php$is_args$query_string;
         }
-
         location @backend {
             proxy_pass http://127.0.0.1:6600;
         }
-
 location ~ .*\.(js|css)?$
 {
     expires      1h;
