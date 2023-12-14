@@ -116,6 +116,7 @@ php artisan horizon
 php -c cli-php.ini webman.php start
 ```
 同样的操作，启动命令换成如上，出现进程ID后证明启动成功
+![image](https://github.com/vlesstop/xiaoV2b/assets/48223192/e9056156-91f8-4bda-96fa-360fbec2955b)
 
 
 
