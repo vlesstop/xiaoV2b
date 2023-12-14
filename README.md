@@ -108,4 +108,13 @@ location ~ .*\.(js|css)?$
 
 ![image](https://github.com/vlesstop/xiaoV2b/assets/48223192/92e5ebae-980f-490d-b1b1-a902498aa4df)
 
+```
+php artisan horizon
+```
+![image](https://github.com/vlesstop/xiaoV2b/assets/48223192/8eafa37c-d605-4f7a-aa66-1bb9bb792e22)
 
+
+```
+php -c cli-php.ini webman.php start
+```
+同样的操作，启动命令换成如上，出现进程ID后证明启动成功
