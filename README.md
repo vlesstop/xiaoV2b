@@ -92,4 +92,20 @@ location ~ .*\.(js|css)?$
     access_log /dev/null; 
 }
 ```
+## 配置定时任务
+宝塔 面板 >计划任务
+
+任务类型--------Shell脚本
+任务名称--------V2B基本任务
+执行周期-------- N分钟1分钟
+脚本内容-------- php /www/wwwroot/v2board/artisan schedule:run
+根据上述信息添加每1分钟执行一次的定时任务。
+![image](https://github.com/vlesstop/xiaoV2b/assets/48223192/79cc5cdf-7e47-428d-b660-f2944ef47893)
+
+
+## 守护任务及启用webman
+打开宝塔-点击软件商店-应用搜索 [进程守护管理器] 执行安装
+
+![image](https://github.com/vlesstop/xiaoV2b/assets/48223192/92e5ebae-980f-490d-b1b1-a902498aa4df)
+
 
