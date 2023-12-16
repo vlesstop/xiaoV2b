@@ -118,7 +118,7 @@ php -c cli-php.ini webman.php start
 ![image](https://github.com/vlesstop/xiaoV2b/assets/48223192/e9056156-91f8-4bda-96fa-360fbec2955b)
 
 ## 如果开启webman后订阅地址显示为127.0.0.1看下方处理方法
-请在nginx没设置加入以下内容
+请在nginx内设置加入以下内容
 ```
 proxy_set_header X-Forwarded-For $proxy_protocol_addr;
         proxy_set_header Host            $http_host;
