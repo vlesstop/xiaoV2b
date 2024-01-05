@@ -54,6 +54,8 @@ https://github.com/wyx2685/v2board/
 
 
 ## 首先进入到网站目录下   cd /www/wwwroot/v2board
+
+## 删除目录下所有文件以后执行以下命令
      git clone https://github.com/wyx2685/v2board.git ./
 ## 克隆完成后执行以下命令
       sh init.sh
