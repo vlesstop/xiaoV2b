@@ -53,7 +53,7 @@ https://github.com/wyx2685/v2board/
 ## 登录到SSH 进行下面的操作
 
 
-
+## 首先进入到网站目录下   cd /www/wwwroot/v2board
      git clone https://github.com/wyx2685/v2board.git ./
 ## 克隆完成后执行以下命令
       sh init.sh
