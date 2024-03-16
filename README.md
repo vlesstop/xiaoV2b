@@ -126,9 +126,7 @@ php -c cli-php.ini webman.php start
 ## 如果开启webman后订阅地址显示为127.0.0.1看下方处理方法
 请在nginx内设置加入以下内容
 ```
-proxy_set_header X-Forwarded-For $proxy_protocol_addr;
-        proxy_set_header Host            $http_host;
-        proxy_set_header                 Upgrade $http_upgrade;
+proxy_set_header Host            $http_host;
 ```
 ###  注意
 启用webman后做的任何代码修改都需要重启生效
